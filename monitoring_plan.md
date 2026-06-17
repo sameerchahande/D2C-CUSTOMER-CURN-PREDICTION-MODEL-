@@ -1,12 +1,12 @@
 # Monitoring and Deployment Plan
 
-## 📊 Overview
+##  Overview
 
 This document outlines the monitoring, performance tracking, and deployment strategy for the Customer Churn Prediction API.
 
 ---
 
-## 🎯 Key Metrics to Monitor
+##  Key Metrics to Monitor
 
 ### API Performance Metrics
 - **Response Time**: Average latency for predictions
@@ -39,7 +39,7 @@ This document outlines the monitoring, performance tracking, and deployment stra
 
 ---
 
-## 🔍 Health Checks
+##  Health Checks
 
 ### API Health Endpoint
 The `/health` endpoint provides real-time status:
@@ -60,7 +60,7 @@ curl http://localhost:8000/health
 
 ---
 
-## 📈 Performance Monitoring
+##  Performance Monitoring
 
 ### Request Logging
 Log all API requests with:
@@ -95,7 +95,7 @@ Log all API requests with:
 
 ---
 
-## 🚨 Alerts and Thresholds
+##  Alerts and Thresholds
 
 ### Critical Alerts (Immediate Action)
 | Metric | Threshold | Action |
@@ -114,7 +114,7 @@ Log all API requests with:
 
 ---
 
-## 🔄 Model Retraining Strategy
+##  Model Retraining Strategy
 
 ### Trigger Conditions for Retraining
 1. **Performance Degradation**: Precision or Recall drops below 0.70
@@ -151,7 +151,7 @@ Model artifacts structure:
 
 ---
 
-## 📊 Monitoring Dashboard Components
+##  Monitoring Dashboard Components
 
 ### Real-Time Metrics
 - API response time (histogram)
@@ -178,7 +178,7 @@ Model artifacts structure:
 
 ---
 
-## 🚀 Deployment Checklist
+##  Deployment Checklist
 
 ### Pre-Deployment
 - [ ] Run full test suite: `python tests/test_api.py`
@@ -247,7 +247,7 @@ logging.basicConfig(
 
 ---
 
-## 🔐 Security Monitoring
+##  Security Monitoring
 
 ### API Security
 - Monitor for unusual request patterns (DDoS detection)
@@ -263,7 +263,7 @@ logging.basicConfig(
 
 ---
 
-## 📞 Escalation Procedure
+##  Escalation Procedure
 
 ### On-Call Rotation
 - **Tier 1**: Application monitoring (automated alerts)
@@ -278,8 +278,7 @@ logging.basicConfig(
 
 ---
 
-## 📅 Monitoring Schedule
-
+##  Monitoring Schedule
 ### Daily Tasks
 - Review error logs
 - Check error rate trends
@@ -305,7 +304,7 @@ logging.basicConfig(
 
 ---
 
-## 🛠️ Troubleshooting Guide
+##  Troubleshooting Guide
 
 ### Issue: Model Not Loading on Startup
 **Solution:**
@@ -329,7 +328,7 @@ logging.basicConfig(
 
 ---
 
-## 📚 Appendix
+##  Appendix
 
 ### Recommended Tools
 - **Monitoring**: Prometheus, Grafana, DataDog
