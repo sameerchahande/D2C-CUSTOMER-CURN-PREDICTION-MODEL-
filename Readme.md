@@ -11,6 +11,41 @@ A FastAPI-based REST API that predicts customer churn using a Random Forest mode
 ├── Requirement.txt  # Python dependencies
 ├── Readme.md        # This file
 ```
+**# Docker Support
+
+This project includes Docker support for easy setup and reproducible execution across different environments.
+
+## Build Docker Image
+
+```bash
+docker build -t churn-prediction .
+```
+
+## Run Docker Container
+
+```bash
+docker run -p 8501:8501 churn-prediction
+```
+
+## Docker Features
+
+* Consistent execution environment
+* Easy deployment across platforms
+* Simplified dependency management
+* Reproducible machine learning workflow
+
+## Project Structure
+
+```text
+├── Dockerfile
+├── requirements.txt
+├── src/
+├── notebooks/
+├── data/
+├── README.md
+└── outputs/
+```
+**
 
 ## Setup & Usage
 
@@ -116,3 +151,9 @@ Predict churn for a single customer.
 Once the server is running, visit:
 - Swagger UI: `http://localhost:8000/docs`
 - ReDoc: `http://localhost:8000/redoc`
+
+
+**AUTHOR**
+Sameer Chahande 
+
+GitHub:  https://github.com/sameerchahande/D2C-CUSTOMER-CURN-PREDICTION-MODEL-
