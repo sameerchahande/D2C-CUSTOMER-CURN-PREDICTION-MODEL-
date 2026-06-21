@@ -11,7 +11,7 @@ A FastAPI-based REST API that predicts customer churn using a Random Forest mode
 ├── Requirement.txt  # Python dependencies
 ├── Readme.md        # This file
 ```
-**# Docker Support
+Docker Support
 
 This project includes Docker support for easy setup and reproducible execution across different environments.
 
@@ -24,9 +24,14 @@ docker build -t churn-prediction .
 ## Run Docker Container
 
 ```bash
-docker run -p 8501:8501 churn-prediction
+docker run -p 8000:8000 churn-prediction
 ```
+# Customer Churn Prediction API
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
 ## Docker Features
 
 * Consistent execution environment
@@ -34,16 +39,25 @@ docker run -p 8501:8501 churn-prediction
 * Simplified dependency management
 * Reproducible machine learning workflow
 
+## Docker Verification
+
+Build Image:
+
+```bash
+docker build -t fastapi-app .
+
+
 ## Project Structure
 
 ```text
-├── Dockerfile
-├── requirements.txt
-├── src/
-├── notebooks/
-├── data/
-├── README.md
-└── outputs/
+main.py
+Train_Model.py
+Test_Api
+Requirement.txt
+Dockerfile
+churn_model.pkl
+label_encoders.pkl
+model_features.pkl
 ```
 **
 
@@ -145,7 +159,13 @@ Predict churn for a single customer.
 - days_since_signup, sessions_30d, product_views_30d, cart_adds_30d
 - wishlist_adds_30d, abandoned_carts_30d, email_opens_30d, campaign_clicks_30d
 - last_visit_days_ago
+##Result
+## Model Information
 
+- Algorithm: Random Forest Classifier
+- Task: Customer Churn Prediction
+- Features: RFM + Behavioral Features
+- Deployment: FastAPI + Docker
 ## Interactive API Docs
 
 Once the server is running, visit:
@@ -154,6 +174,10 @@ Once the server is running, visit:
 
 
 **AUTHOR**
-Sameer Chahande 
+## Author
 
-GitHub:  https://github.com/sameerchahande/D2C-CUSTOMER-CURN-PREDICTION-MODEL-
+**Sameer Chahande**
+
+AI/ML Enthusiast | FastAPI | Machine Learning | Data Science
+
+GitHub: https://github.com/sameerchahande
